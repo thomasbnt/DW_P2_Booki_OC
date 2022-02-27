@@ -49,7 +49,7 @@ dessus. Par contre, ils ne doivent pas être fonctionnels.
 
 ## Notes
 
-Le font family **Raleway** est distribué depuis le local et non le CDN de Google.
+Le font family **Raleway** est distribué depuis le local et non venant du CDN de Google.
 Le dossier se trouve dans [assets/fonts](assets/fonts).
 
 ## Licences
