@@ -52,6 +52,14 @@ dessus. Par contre, ils ne doivent pas être fonctionnels.
 Le font family **Raleway** est distribué depuis le local et non venant du CDN de Google.
 Le dossier se trouve dans [assets/fonts](assets/fonts).
 
+## Todo 
+
+- [ ] Semantic HTML
+- [ ] Images compressées et optimisées
+- [ ] Responsive design
+- [ ] Validé avec le W3C
+
+
 ## Licences
 
 Fork Awesome V1.2.0 — [SIL OFL 1.1](https://forkaweso.me/Fork-Awesome/license/)
