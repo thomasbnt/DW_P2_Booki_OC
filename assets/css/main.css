@@ -1,0 +1,104 @@
+/**
+*   @Document : main.css
+*   @Author   : Thomas Bnt
+*   @Date     : 27/02/2022
+*
+*/
+
+:root {
+    --primary-color: #0065FC;
+    --primary-color-light: #DEEBFF;
+    --grey: #F2F2F2;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway"),
+    url("/assets/fonts/Raleway.ttf") format("truetype");
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+    font-family: Raleway, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+}
+header > img {
+    padding-top: 10px;
+}
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+header > nav > a {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 27px;
+    border-top: 2px solid transparent;
+    cursor: pointer;
+    color: #141415;
+    text-decoration: none;
+    transition: .2s;
+}
+header > nav a:hover {
+    border-top: 3px solid var(--primary-color);
+}
+
+/*---------------- Breakpoints ----------------*/
+
+/* large devices */
+@media (min-width: 992px) {
+    header {
+        padding: 0 15%;
+    }
+}
+
+/* medium devices */
+@media (min-width: 768px) {
+    header {
+        padding: 0 7%;
+    }
+}
+/* small devices */
+@media (max-width: 768px) {
+    header {
+        padding: 0 0;
+        flex-direction: column;
+    }
+    header > img {
+        padding: 0 38%;
+        margin: 20px 0;
+    }
+    nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+    nav,
+    header > nav > a {
+        border-top: none;
+        border-bottom: 2px solid var(--grey);
+        width: 50%;
+        text-align: center;
+    }
+    header > nav > a:hover {
+        border-top: none;
+        border-bottom-color: var(--primary-color);
+    }
+}
+
