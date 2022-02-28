@@ -129,6 +129,9 @@ input {
     .navbar {
         padding: 0 7%;
     }
+    .localization_form > button:after {
+        content: "Rechercher";
+    }
 }
 
 /* small devices */
@@ -170,6 +173,10 @@ input {
     .localization_form > button {
         max-width: 100%;
         padding: 9px 13px;
+    }
+    .localization_form > button:after {
+        font-family: ForkAwesome, sans-serif;
+        content: "\f002";
     }
 }
 
