@@ -77,31 +77,33 @@ input[type=search] {
     padding: 13px;
     border: var(--grey) solid 1px;
 }
-input[type=search]:hover {
-    transition: .2s;
-    border: var(--primary-color) solid 1px;
-}
+
 input::placeholder {
     font-size: 18px;
     font-weight: 400;
     color: #323232;
 }
+
 input {
     padding: 5px 15px;
 }
+
 .localization_icon {
-    padding: 13px 15px;
+    padding: 14px 19px;
     background-color: var(--grey);
     border: var(--grey) solid 1px;
     border-radius: 10px 0 0 10px;
 }
+
 .localization_form > button {
+    cursor: pointer;
     background-color: var(--primary-color);
+    border: var(--primary-color) solid 1px;
     color: white;
-    border: none;
-    padding: 13px 15px;
+    padding: 14px 15px;
     border-radius: 0 10px 10px 0;
 }
+
 /*---------------- Sections ----------------*/
 .first_section {
     padding-top: 8px;
@@ -166,7 +168,8 @@ input {
     .localization_icon,
     .localization_form > input[type=search],
     .localization_form > button {
-        padding: 7px 15px;
+        max-width: 100%;
+        padding: 9px 13px;
     }
 }
 
