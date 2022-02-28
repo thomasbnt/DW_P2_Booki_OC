@@ -31,22 +31,25 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
+.navbar {
     color: #fff;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.4rem;
 }
-header > img {
+
+.navbar > img {
     padding-top: 10px;
 }
-header > nav {
+
+.navbar > nav {
     display: flex;
     align-items: center;
     justify-content: center;
     width: auto;
 }
-header > nav > a {
+
+.navbar > nav > a {
     font-size: 17px;
     font-weight: 400;
     padding: 27px;
@@ -56,49 +59,114 @@ header > nav > a {
     text-decoration: none;
     transition: .2s;
 }
-header > nav a:hover {
+
+.navbar > nav a:hover {
     border-top: 3px solid var(--primary-color);
+}
+
+form {
+    font-size: 18px;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+input[type=search] {
+    outline-offset: unset;
+    padding: 13px;
+    border: var(--grey) solid 1px;
+}
+input[type=search]:hover {
+    transition: .2s;
+    border: var(--primary-color) solid 1px;
+}
+input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: #323232;
+}
+input {
+    padding: 5px 15px;
+}
+.localization_icon {
+    padding: 13px 15px;
+    background-color: var(--grey);
+    border: var(--grey) solid 1px;
+    border-radius: 10px 0 0 10px;
+}
+.localization_form > button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 13px 15px;
+    border-radius: 0 10px 10px 0;
+}
+/*---------------- Sections ----------------*/
+.first_section {
+    padding-top: 8px;
 }
 
 /*---------------- Breakpoints ----------------*/
 
 /* large devices */
 @media (min-width: 992px) {
-    header {
+    .container,
+    .navbar {
         padding: 0 15%;
+    }
+
+    .first_section {
+        padding-top: 20px;
     }
 }
 
 /* medium devices */
 @media (min-width: 768px) {
-    header {
+    .container,
+    .navbar {
         padding: 0 7%;
     }
 }
+
 /* small devices */
 @media (max-width: 768px) {
-    header {
+    .container {
+        padding: 0 4%;
+    }
+
+    .navbar {
         padding: 0 0;
         flex-direction: column;
     }
-    header > img {
+
+    .navbar > img {
         padding: 0 38%;
         margin: 20px 0;
     }
+
     nav {
         width: 100%;
         justify-content: space-around;
     }
+
     nav,
-    header > nav > a {
+    .navbar > nav > a {
         border-top: none;
         border-bottom: 2px solid var(--grey);
         width: 50%;
         text-align: center;
     }
-    header > nav > a:hover {
+
+    .navbar > nav > a:hover {
         border-top: none;
         border-bottom-color: var(--primary-color);
+    }
+
+    .localization_icon,
+    .localization_form > input[type=search],
+    .localization_form > button {
+        padding: 7px 15px;
     }
 }
 
