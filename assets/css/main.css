@@ -104,9 +104,38 @@ input {
     border-radius: 0 10px 10px 0;
 }
 
+.filter {
+    user-select: none;
+    display: inline-flex;
+    border: var(--grey) solid 3px;
+    border-radius: 50px;
+}
+
+.filter__icon {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color);
+    padding: 15px;
+    border-radius: 50%;
+}
+.filter__name {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px;
+}
+
 /*---------------- Sections ----------------*/
 .first_section {
     padding-top: 8px;
+}
+.first_section h2 {
+    font-weight: 200;
+}
+.filters_section {
+    align-items: center;
+}
+.filters_section > h3 {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /*---------------- Breakpoints ----------------*/
@@ -120,6 +149,12 @@ input {
 
     .first_section {
         padding-top: 20px;
+    }
+    .filters_section {
+        display: inline-flex;
+    }
+    .filters_section > h3 {
+        margin-right: 20px;
     }
 }
 

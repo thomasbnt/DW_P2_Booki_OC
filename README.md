@@ -45,7 +45,7 @@ dessus. Par contre, ils ne doivent pas être fonctionnels.
 ## Développement
 
 - Projet réalisé avec **Intellij**. 
-- Images compressées et transformé en format adéquat avec **[Squoosh](https://squoosh.app/)**
+- Images compressées et transformé au format adéquat avec **[Squoosh](https://squoosh.app/)**
 
 ## Notes
 
