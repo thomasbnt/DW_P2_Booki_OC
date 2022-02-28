@@ -27,7 +27,7 @@ dessus. Par contre, ils ne doivent pas être fonctionnels.
 - Breakpoints : **992px** (écrans d'ordinateurs), **768px** (tablettes) & **>768px** (smartphones)
 - Desktop first
 - Adapter le format image → Compresser les images & optimiser la qualité sous format `.webp`
-- Icônes : Font Awesome → **[Fork Awesome](https://forkaweso.me/Fork-Awesome/icons/)** (plus léger)
+- Icônes : **Font Awesome** 
 - Intégrer les couleurs, tel le bleu, bleu clair et le gris.
 - Font : **[Raleway](https://fonts.google.com/specimen/Raleway)** 
 - Basé sur du **Flexbox**
@@ -58,11 +58,6 @@ Le dossier se trouve dans [assets/fonts](assets/fonts).
 - [ ] Images compressées et optimisées
 - [ ] Responsive design
 - [ ] Validé avec le W3C
-
-
-## Licences
-
-Fork Awesome V1.2.0 — [SIL OFL 1.1](https://forkaweso.me/Fork-Awesome/license/)
 
 ____
 
