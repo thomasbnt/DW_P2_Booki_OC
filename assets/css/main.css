@@ -123,14 +123,14 @@ input {
     background-color: var(--primary-color-light);
     color: var(--primary-color);
     border-radius: 50%;
-    min-height: 60px;
-    min-width: 60px;
+    min-height: 45px;
+    min-width: 45px;
     margin: -3px;
 }
 .filter__name {
     font-size: 15px;
     font-weight: 600;
-    padding: 15px;
+    padding: 0 25px 0 15px;
 }
 
 /*---------------- Sections ----------------*/
