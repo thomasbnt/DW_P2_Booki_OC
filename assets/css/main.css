@@ -40,6 +40,8 @@ html {
 
 .navbar > img {
     padding-top: 10px;
+    height: 100%;
+    align-self: center;
 }
 
 .navbar > nav {
@@ -52,8 +54,8 @@ html {
 .navbar > nav > a {
     font-size: 17px;
     font-weight: 400;
-    padding: 27px;
-    border-top: 2px solid transparent;
+    padding: 40px 30px;
+    border-top: 3px solid transparent;
     cursor: pointer;
     color: #141415;
     text-decoration: none;
@@ -92,7 +94,7 @@ input {
     padding: 14px 19px;
     background-color: var(--grey);
     border: var(--grey) solid 1px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 16px 0 0 16px;
 }
 
 .localization_form > button {
@@ -101,24 +103,29 @@ input {
     border: var(--primary-color) solid 1px;
     color: white;
     padding: 14px 15px;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 16px 16px 0;
 }
 
 .filter {
     user-select: none;
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: var(--grey) solid 3px;
     border-radius: 50px;
 }
 
 .filter__icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--primary-color-light);
     color: var(--primary-color);
-    padding: 15px;
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
-    text-align: center;
+    min-height: 60px;
+    min-width: 60px;
+    margin: -3px;
 }
 .filter__name {
     font-size: 15px;
