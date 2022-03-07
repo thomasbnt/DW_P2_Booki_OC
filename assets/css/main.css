@@ -106,6 +106,12 @@ input {
     border-radius: 0 16px 16px 0;
 }
 
+.filter_group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .filter {
     user-select: none;
     display: inline-flex;
@@ -113,10 +119,17 @@ input {
     justify-content: center;
     border: var(--grey) solid 3px;
     border-radius: 50px;
+    margin: 5px 8px;
+    transition: .2s;
+}
+
+.filter:hover {
+    cursor: pointer;
+    background-color: rgba(0, 101, 252, 0.05);
 }
 
 .filter__icon {
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +139,14 @@ input {
     min-height: 45px;
     min-width: 45px;
     margin: -3px;
+    transition: .2s;
 }
+
+.filter:hover > .filter__icon {
+    background-color: #0065FC;
+    color: white;
+}
+
 .filter__name {
     font-size: 15px;
     font-weight: 600;
@@ -137,15 +157,124 @@ input {
 .first_section {
     padding-top: 8px;
 }
+
 .first_section h2 {
     font-weight: 200;
 }
+
 .filters_section {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
+
 .filters_section > h3 {
     font-size: 18px;
     font-weight: 600;
+}
+
+.hosts_section {
+    display: flex;
+    flex-direction: row;
+}
+
+/*---------------- End Sections ----------------*/
+.info_host {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.white_circle_info {
+    color: var(--primary-color);
+    border: var(--grey) solid 1px;
+    border-radius: 50%;
+    max-width: 25px;
+    max-height: 25px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.white_circle_info > i {
+    margin: 5px;
+}
+
+.hosts, .populars_hosts {
+    background-color: var(--grey);
+    /*margin: 10px 20px;*/
+    padding: 50px 40px;
+    border-radius: 15px;
+}
+
+.hosts > header > h2 {
+    margin-bottom: 20px;
+}
+
+.group_cards_hosts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: #ddd 2px 3px 5px;
+    transition: .2s;
+    max-width: 300px;
+    margin: 5px 15px;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: #ddd 3px 4px 5px;
+}
+.group_cards_hosts > .card {
+    max-width: 28%;
+}
+.card__image > img {
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    border-radius: 25px 25px 0 0;
+    border: white solid 7px;
+    -webkit-user-drag: none;
+}
+
+.card__body {
+    margin: 5px 20px 25px 20px;
+}
+
+.card__title, .card__price, .card__note {
+    margin-top: 6px;
+}
+
+.card__title > h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card__note i {
+    color: var(--primary-color);
+}
+
+.card__note i.fa-star-stroke {
+    color: var(--grey);
+}
+
+.populars_hosts {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.populars_hosts > header {
+    display: flex;
+}
+
+.populars_hosts > header > i {
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 /*---------------- Breakpoints ----------------*/
@@ -160,12 +289,16 @@ input {
     .first_section {
         padding-top: 20px;
     }
+
     .filters_section {
         display: inline-flex;
+        margin-bottom: 20px;
     }
-    .filters_section > h3 {
+
+    .filters_section h3 {
         margin-right: 20px;
     }
+
     .filter {
         margin-left: 20px;
     }
@@ -177,6 +310,7 @@ input {
     .navbar {
         padding: 0 7%;
     }
+
     .localization_form > button:after {
         content: "Rechercher";
     }
@@ -221,12 +355,18 @@ input {
         max-width: 100%;
         padding: 9px 13px;
     }
+
     .localization_form > button:after {
         font-family: FontAwesome, sans-serif;
         content: "\f002";
     }
-    .filters_section > h3 {
-        margin-bottom: 20px;
+
+    .filters_section h3 {
+        margin-bottom: 10px;
+    }
+    .hosts_section {
+        display: flex;
+        flex-direction: column;
     }
 }
 
