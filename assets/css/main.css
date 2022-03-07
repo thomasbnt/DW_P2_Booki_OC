@@ -232,7 +232,7 @@ input {
 
 .card:hover {
     cursor: pointer;
-    box-shadow: #ddd 3px 4px 5px;
+    box-shadow: #ddd 5px 6px 5px;
 }
 
 .group_cards_hosts > .card {
