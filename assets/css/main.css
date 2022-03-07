@@ -154,9 +154,6 @@ input {
 }
 
 /*---------------- Sections ----------------*/
-.first_section {
-    padding-top: 8px;
-}
 
 .first_section h2 {
     font-weight: 200;
@@ -235,10 +232,6 @@ input {
     box-shadow: #ddd 5px 6px 5px;
 }
 
-.group_cards_hosts > .card {
-    max-width: 28%;
-}
-
 .card__image > img {
     width: 100%;
     max-height: 200px;
@@ -287,10 +280,6 @@ input {
         padding: 0 15%;
     }
 
-    .first_section {
-        padding-top: 20px;
-    }
-
     .filters_section {
         display: inline-flex;
         margin-bottom: 20px;
@@ -317,7 +306,7 @@ input {
 @media (min-width: 768px) {
     .container,
     .navbar {
-        padding: 0 7%;
+        padding: 0 4%;
     }
 
     .localization_form > button:after {
@@ -358,6 +347,15 @@ input {
         border-bottom-color: var(--primary-color);
     }
 
+    .first_section {
+        padding-top: 10px;
+    }
+    .first_section h1 {
+        font-size: 25px;
+    }
+    .first_section h2 {
+        font-size: 18px;
+    }
     .localization_icon,
     .localization_form > input[type=search],
     .localization_form > button {
