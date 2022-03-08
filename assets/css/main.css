@@ -214,6 +214,9 @@ input {
 .group_cards_hosts {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 10px;
+    justify-content: center;
 }
 
 .card {
@@ -223,8 +226,9 @@ input {
     border-radius: 25px;
     box-shadow: #ddd 2px 3px 5px;
     transition: .2s;
-    max-width: 300px;
-    margin: 5px 15px;
+    max-width: 235px;
+    min-width: 200px;
+    flex-grow: 1;
 }
 
 .card:hover {
@@ -300,15 +304,6 @@ input {
     .populars_hosts {
         width: 25%;
     }
-}
-
-/* medium devices */
-@media (min-width: 768px) {
-    .container,
-    .navbar {
-        padding: 0 4%;
-    }
-
     .localization_form > button:after {
         content: "Rechercher";
     }
