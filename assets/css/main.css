@@ -186,6 +186,9 @@ input {
     display: flex;
     gap: 10px 30px;
 }
+.activities_section {
+    margin: 50px 0;
+}
 
 /*---------------- End Sections ----------------*/
 .info_host {
@@ -343,6 +346,19 @@ input {
 
 .card_popular > .card__body {
     flex: 2;
+}
+.activities_grid {
+    display: grid;
+    gap: 30px;
+    min-width: 100px;
+    min-height: 100px;
+}
+.activities_grid > div {
+    grid-area: 1;
+    background-color: #5980e2;
+}
+.activities_section h2 {
+    margin-bottom: 20px;
 }
 
 
