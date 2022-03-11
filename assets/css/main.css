@@ -175,10 +175,14 @@ input {
 
 .hosts_section {
     display: flex;
-    justify-content: space-between;
+    gap: 10px 30px;
 }
 .hosts {
+    flex: 2;
 
+}
+.populars_hosts {
+    flex: 1;
 }
 
 /*---------------- End Sections ----------------*/
@@ -230,7 +234,7 @@ input {
     border-radius: 25px;
     box-shadow: #ddd 2px 3px 5px;
     transition: .2s;
-    max-width: 235px;
+    max-width: calc(100%/3);
     min-width: 200px;
     flex-grow: 1;
 }
@@ -279,6 +283,9 @@ input {
     font-size: 20px;
     margin-left: 10px;
 }
+.localization_form > button:after {
+    content: "Rechercher";
+}
 
 /*---------------- Breakpoints ----------------*/
 
@@ -309,11 +316,13 @@ input {
     .populars_hosts {
         width: 25%;
     }
-    .localization_form > button:after {
-        content: "Rechercher";
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .container,
+    .navbar {
+        padding: 0 3%;
     }
 }
-
 /* small devices */
 @media (max-width: 768px) {
     .container {
@@ -377,7 +386,7 @@ input {
 
     .hosts_section {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .hosts, .populars_hosts {
