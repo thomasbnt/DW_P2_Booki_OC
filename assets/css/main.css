@@ -61,23 +61,27 @@ html {
     text-decoration: none;
     transition: .2s;
 }
+.navbar > nav > a:first-of-type {
+    border-top: 3px solid var(--primary-color);
+}
 
 .navbar > nav a:hover {
     border-top: 3px solid var(--primary-color);
 }
-
-form {
+.localization_form {
+    display: flex;
+    flex: 1;
+    max-width: fit-content;
     font-size: 18px;
     margin: 25px 0;
-    display: flex;
-    align-items: center;
-    width: auto;
 }
 
 input[type=search] {
     outline-offset: unset;
     padding: 13px;
     border: var(--grey) solid 1px;
+    width: 0;
+    min-width: fit-content;
 }
 
 input::placeholder {
@@ -89,7 +93,6 @@ input::placeholder {
 input {
     padding: 5px 15px;
 }
-
 .localization_icon {
     padding: 14px 19px;
     background-color: var(--grey);
@@ -172,9 +175,10 @@ input {
 
 .hosts_section {
     display: flex;
-    flex-direction: row;
-    scroll-margin-top: 10px;
     justify-content: space-between;
+}
+.hosts {
+
 }
 
 /*---------------- End Sections ----------------*/
@@ -237,8 +241,9 @@ input {
 }
 
 .card__image > img {
+    object-fit: cover;
     width: 100%;
-    max-height: 200px;
+    max-height: 100px;
     border-radius: 25px 25px 0 0;
     border: white solid 7px;
     -webkit-user-drag: none;
@@ -253,7 +258,7 @@ input {
 }
 
 .card__title > h3 {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
 }
 
@@ -337,6 +342,9 @@ input {
         text-align: center;
     }
 
+    .navbar > nav > a:first-of-type {
+        border-top: 0 solid transparent;
+    }
     .navbar > nav > a:hover {
         border-top: none;
         border-bottom-color: var(--primary-color);
