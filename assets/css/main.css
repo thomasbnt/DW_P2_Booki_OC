@@ -31,6 +31,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
 .navbar {
     color: #fff;
     display: flex;
@@ -61,6 +65,7 @@ html {
     text-decoration: none;
     transition: .2s;
 }
+
 .navbar > nav > a:first-of-type {
     border-top: 3px solid var(--primary-color);
 }
@@ -68,6 +73,7 @@ html {
 .navbar > nav a:hover {
     border-top: 3px solid var(--primary-color);
 }
+
 .localization_form {
     display: flex;
     flex: 1;
@@ -93,6 +99,7 @@ input::placeholder {
 input {
     padding: 5px 15px;
 }
+
 .localization_icon {
     padding: 14px 19px;
     background-color: var(--grey);
@@ -146,6 +153,8 @@ input {
 }
 
 .filter:hover > .filter__icon {
+    transition: .2s;
+    transform: scale(1.1);
     background-color: #0065FC;
     color: white;
 }
@@ -177,13 +186,6 @@ input {
     display: flex;
     gap: 10px 30px;
 }
-.hosts {
-    flex: 2;
-
-}
-.populars_hosts {
-    flex: 1;
-}
 
 /*---------------- End Sections ----------------*/
 .info_host {
@@ -208,6 +210,16 @@ input {
     margin: 5px;
 }
 
+.hosts {
+    flex: 2;
+}
+
+.populars_hosts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .hosts, .populars_hosts {
     background-color: var(--grey);
     /*margin: 10px 20px;*/
@@ -227,6 +239,12 @@ input {
     justify-content: center;
 }
 
+.show_more {
+    margin-top: 60px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
 .card {
     text-decoration: none;
     color: #141415;
@@ -234,19 +252,26 @@ input {
     border-radius: 25px;
     box-shadow: #ddd 2px 3px 5px;
     transition: .2s;
-    max-width: calc(100%/3);
+    max-width: calc(100% / 3);
     min-width: 200px;
     flex-grow: 1;
 }
 
-.card:hover {
+.card:hover,
+.card_popular:hover {
     cursor: pointer;
     box-shadow: #ddd 5px 6px 5px;
+}
+.card:hover img,
+.card_popular:hover img {
+    transition: .2s;
+    transform: scale(.98);
 }
 
 .card__image > img {
     object-fit: cover;
     width: 100%;
+    min-width: 200px;
     max-height: 100px;
     border-radius: 25px 25px 0 0;
     border: white solid 7px;
@@ -274,8 +299,13 @@ input {
     color: var(--grey);
 }
 
+.localization_form > button:after {
+    content: "Rechercher";
+}
+
 .populars_hosts > header {
     display: flex;
+    margin-bottom: 20px;
     justify-content: space-between;
 }
 
@@ -283,9 +313,38 @@ input {
     font-size: 20px;
     margin-left: 10px;
 }
-.localization_form > button:after {
-    content: "Rechercher";
+.popular_hosts_group {
+    display: inline-grid;
+    row-gap: 15px;
 }
+.card_popular {
+    max-height: 150px;
+    box-shadow: #ddd 2px 3px 5px;
+    transition: .2s;
+    text-decoration: unset;
+    color: #1E1E1E;
+    display: flex;
+    background-color: white;
+    border-radius: 25px;
+    user-select: none;
+}
+.card_popular h3 {
+    font-size: 19px;
+}
+
+.card_popular > .card__image {
+    flex: 1;
+    max-width: 140px;
+    object-fit: cover;
+    border: white solid 7px;
+    border-radius: 25px 0 0 25px;
+    min-height: 150px;
+}
+
+.card_popular > .card__body {
+    flex: 2;
+}
+
 
 /*---------------- Breakpoints ----------------*/
 
@@ -308,21 +367,15 @@ input {
     .filter {
         margin-left: 20px;
     }
-
-    .hosts {
-        width: 70%;
-    }
-
-    .populars_hosts {
-        width: 25%;
-    }
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
     .container,
     .navbar {
         padding: 0 3%;
     }
 }
+
 /* small devices */
 @media (max-width: 768px) {
     .container {
@@ -354,6 +407,7 @@ input {
     .navbar > nav > a:first-of-type {
         border-top: 0 solid transparent;
     }
+
     .navbar > nav > a:hover {
         border-top: none;
         border-bottom-color: var(--primary-color);
@@ -362,12 +416,15 @@ input {
     .first_section {
         padding-top: 10px;
     }
+
     .first_section h1 {
         font-size: 25px;
     }
+
     .first_section h2 {
         font-size: 18px;
     }
+
     .localization_icon,
     .localization_form > input[type=search],
     .localization_form > button {
