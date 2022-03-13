@@ -68,6 +68,7 @@ a {
 
 .navbar > nav > a:first-of-type {
     border-top: 3px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .navbar > nav a:hover {
@@ -350,11 +351,9 @@ input {
 .activities_grid {
     display: grid;
     gap: 30px;
-    min-width: 100px;
-    min-height: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .activities_grid > div {
-    grid-area: 1;
     background-color: #5980e2;
 }
 .activities_section h2 {
@@ -369,6 +368,9 @@ input {
     .container,
     .navbar {
         padding: 0 15%;
+    }
+    .navbar > nav > a:first-of-type {
+        color: var(--primary-color);
     }
 
     .filters_section {
@@ -427,6 +429,9 @@ input {
     .navbar > nav > a:hover {
         border-top: none;
         border-bottom-color: var(--primary-color);
+    }
+    .navbar > nav > a:first-of-type {
+        color: #1E1E1E;
     }
 
     .first_section {
