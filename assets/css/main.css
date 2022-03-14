@@ -223,12 +223,12 @@ input {
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
 .hosts, .populars_hosts {
     background-color: var(--grey);
-    /*margin: 10px 20px;*/
-    padding: 50px 40px;
+    padding: 30px 40px;
     border-radius: 15px;
 }
 
@@ -245,7 +245,7 @@ input {
 }
 
 .show_more {
-    margin-top: 60px;
+    margin-top: 30px;
     font-size: 19px;
     font-weight: 600;
 }
@@ -285,6 +285,7 @@ input {
     border: white solid 7px;
     -webkit-user-drag: none;
 }
+
 .card_popular > img {
     transition: .3s;
 }
@@ -442,6 +443,7 @@ footer {
     font-size: 14px;
     font-weight: 600;
 }
+
 footer > div {
     margin: 40px 100px;
 }
@@ -496,6 +498,12 @@ footer li {
 
     .filter {
         margin-left: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1292px) {
+    footer > div {
+        margin: 20px 50px;
     }
 }
 
@@ -584,6 +592,11 @@ footer li {
     .hosts, .populars_hosts {
         width: unset;
         border-radius: unset;
+    }
+
+    .activities_grid {
+        display: flex;
+        flex-direction: column;
     }
 
     footer {
