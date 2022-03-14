@@ -257,7 +257,7 @@ input {
     border-radius: 25px;
     box-shadow: #c1c1c1a6 3px 4px 4px;
     transition: .4s;
-    max-width: calc(100% / 3);
+    max-width: calc((100% / 3) - 10px);
     min-width: 200px;
     flex-grow: 1;
 }
@@ -279,8 +279,8 @@ input {
     object-fit: cover;
     transition: .3s;
     width: 100%;
-    min-width: 200px;
-    max-height: 100px;
+    min-width: 120px;
+    max-height: 136px;
     border-radius: 25px 25px 0 0;
     border: white solid 7px;
     -webkit-user-drag: none;
