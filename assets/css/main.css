@@ -516,8 +516,12 @@ footer li {
 
 /* small devices */
 @media (max-width: 768px) {
-    .container, footer {
+    .container {
         padding: 0 4%;
+    }
+
+    footer > div {
+        margin: 0 10px;
     }
 
     .navbar {
@@ -603,7 +607,7 @@ footer li {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 0 20px;
+        padding: 10px 20px;
     }
 }
 
