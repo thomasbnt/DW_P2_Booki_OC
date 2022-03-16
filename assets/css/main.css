@@ -245,9 +245,16 @@ input {
 }
 
 .show_more {
+    cursor: pointer;
+    user-select: none;
     margin-top: 30px;
     font-size: 19px;
     font-weight: 600;
+    transition: .2s;
+}
+
+.show_more:hover {
+    color: var(--primary-color);
 }
 
 .card {
@@ -390,6 +397,13 @@ input {
     box-shadow: #c1c1c1a6 3px 4px 4px;
     background-color: white;
     border-radius: 10px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.card__activities:hover {
+    cursor: pointer;
+    box-shadow: rgb(58 58 58 / 26%) 4px 6px 4px;
 }
 
 .card__activities_title {
