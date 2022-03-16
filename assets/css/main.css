@@ -258,8 +258,10 @@ input {
     box-shadow: #c1c1c1a6 3px 4px 4px;
     transition: .4s;
     max-width: calc((100% / 3) - 10px);
+    /*max-width: calc((100% / 3) - 10px);*/
     min-width: 200px;
     flex-grow: 1;
+    flex: 1;
 }
 
 .card:hover,
