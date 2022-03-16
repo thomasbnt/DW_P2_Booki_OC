@@ -567,6 +567,10 @@ footer li {
         text-align: center;
     }
 
+    .navbar > nav > a {
+        padding: 10px 30px;
+    }
+
     .navbar > nav > a:first-of-type {
         border-top: 0 solid transparent;
     }
