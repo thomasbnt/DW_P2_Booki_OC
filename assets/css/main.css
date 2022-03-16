@@ -624,6 +624,7 @@ footer li {
         grid-auto-rows: 200px;
         grid-template-rows: initial;
         row-gap: 50px;
+        row-gap: 20px;
         grid-template-areas: "large1" "small1" "small2" "large2" "small3" "small4";
     }
 
