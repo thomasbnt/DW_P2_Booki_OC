@@ -338,6 +338,8 @@ input {
 
 .popular_hosts_group {
     display: inline-grid;
+    display: flex;
+    flex-direction: column;
     row-gap: 15px;
 }
 
