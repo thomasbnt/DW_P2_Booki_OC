@@ -1,6 +1,6 @@
 ![Booki logo](assets/images/booki.png)
 
-> Projet n°2 OpenClassrooms Développeur Web. — 27 février 2022.
+> Projet n°2 OpenClassrooms Développeur Web. — 27 février 2022 (Fini le 16 mars 2022).
 
 ## Spécifications fonctionnelles
 
