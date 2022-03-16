@@ -264,10 +264,8 @@ input {
     border-radius: 25px;
     box-shadow: #c1c1c1a6 3px 4px 4px;
     transition: .4s;
-    max-width: calc((100% / 3) - 10px);
     /*max-width: calc((100% / 3) - 10px);*/
     min-width: 200px;
-    flex-grow: 1;
     flex: 1;
 }
 
@@ -275,7 +273,6 @@ input {
 .card_popular:hover {
     transition: .3s;
     cursor: pointer;
-    box-shadow: #ddd 5px 6px 5px;
     box-shadow: rgb(58 58 58 / 26%) 4px 6px 4px;
 }
 
@@ -337,7 +334,6 @@ input {
 }
 
 .popular_hosts_group {
-    display: inline-grid;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
@@ -380,7 +376,6 @@ input {
 
 .activities_grid {
     display: grid;
-    column-gap: 50px;
     column-gap: 25px;
     grid-auto-columns: 1fr;
     grid-template-rows: 150px 50px 50px 150px;
@@ -401,7 +396,6 @@ input {
     flex-wrap: nowrap;
     box-shadow: #c1c1c1a6 3px 4px 4px;
     background-color: white;
-    border-radius: 10px;
     border-radius: 20px;
     transition: .2s;
 }
@@ -460,7 +454,7 @@ input {
 footer {
     display: flex;
     flex-direction: row;
-    padding: 30px 15%;
+    padding: 55px 15%;
     background-color: var(--grey);
     color: #1E1E1E;
     font-size: 14px;
@@ -494,10 +488,20 @@ footer ul {
 }
 
 footer li {
-    line-height: 30px;
+    line-height: 35px;
 }
 
 /*---------------- Breakpoints ----------------*/
+@media (min-width: 768px) and (max-width: 1600px) {
+    .card_popular h3 {
+        font-size: 15px;
+    }
+}
+@media(max-width: 1220px) {
+    .hosts_section {
+        flex-direction: column;
+    }
+}
 
 /* large devices */
 @media (min-width: 992px) {
@@ -627,7 +631,6 @@ footer li {
         display: grid;
         grid-auto-rows: 200px;
         grid-template-rows: initial;
-        row-gap: 50px;
         row-gap: 20px;
         grid-template-areas: "large1" "small1" "small2" "large2" "small3" "small4";
     }
@@ -636,7 +639,7 @@ footer li {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 10px 20px;
+        padding: 40px 20px;
     }
 }
 
