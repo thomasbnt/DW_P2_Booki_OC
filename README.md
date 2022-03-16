@@ -54,10 +54,10 @@ Le dossier se trouve dans [assets/fonts](assets/fonts).
 
 ## Todo 
 
-- [ ] Semantic HTML
-- [ ] Images compressées et optimisées
-- [ ] Responsive design
-- [ ] Validé avec le W3C
+- [x] Semantic HTML
+- [x] Images compressées et optimisées
+- [x] Responsive design
+- [x] Validé avec le W3C
 
 ____
 
