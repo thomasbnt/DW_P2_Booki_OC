@@ -371,6 +371,7 @@ input {
 .card_popular > .card__body {
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 .card_popular > .card__body > .card__void {
@@ -380,6 +381,7 @@ input {
 .activities_grid {
     display: grid;
     column-gap: 50px;
+    column-gap: 25px;
     grid-auto-columns: 1fr;
     grid-template-rows: 150px 50px 50px 150px;
     grid-template-areas:
@@ -417,6 +419,7 @@ input {
     height: 55px;
     line-height: 55px;
     padding: 0 15px;
+    overflow: auto;
 }
 
 .activities_grid img {
