@@ -566,13 +566,13 @@ footer li {
     nav,
     .navbar > nav > a {
         border-top: none;
-        border-bottom: 2px solid var(--grey);
         width: 50%;
         text-align: center;
     }
 
     .navbar > nav > a {
         padding: 10px 30px;
+        border-bottom: 2px solid var(--grey);
     }
 
     .navbar > nav > a:first-of-type {
