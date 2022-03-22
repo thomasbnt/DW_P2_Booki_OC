@@ -507,7 +507,8 @@ footer li {
 @media (min-width: 992px) {
     .container,
     .navbar {
-        padding: 0 15%;
+        margin: 0 auto;
+        max-width: 1200px;
     }
 
     .navbar > nav > a:first-of-type {
